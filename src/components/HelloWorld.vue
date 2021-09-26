@@ -36,7 +36,7 @@
 import Smothie from '../assets/icons/smothie.svg'
 
 export default {
-  name: 'HelloWorld',
+  name: 'CategoryMenu',
   components: {
     Smothie
   },
