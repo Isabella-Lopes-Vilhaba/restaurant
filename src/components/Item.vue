@@ -45,6 +45,9 @@ export default {
     margin: 20px;
     padding: 20px;
 
+    display: flex;
+    flex-direction: column;
+
     &--tag {
       position: absolute;
       background: @pink;
@@ -66,7 +69,7 @@ export default {
     &--name {
       font-weight: 600;
       font-size: 18px;
-      margin: 8px auto;
+      margin: 0;
     }
 
     &--description {
@@ -80,7 +83,15 @@ export default {
       font-weight: 600;
       font-size: 18px;
       color: @yellow;
-      margin: 8px auto;
+      margin: 0;
+    }
+
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 10px;
     }
 
     @media @tablets {
@@ -88,24 +99,29 @@ export default {
       height: fit-content;
       border: 1px solid @light-grey;
       display: flex;
+      flex-direction: row;
       margin: 10px 0;
-      padding: 5px 10px;
+      padding: 10px 20px;
 
       &--img {
-        height: 60px;
+        width: 86px;
         order: 0;
         margin: 0 0 10px 0;
       }
 
       &--price {
         text-align: right;
-        margin: 0 auto;
+        margin: 5px 0 0 auto;
       }
 
       &--tag {
         position: static;
         order: 1;
         width: fit-content;
+      }
+
+      .content {
+        flex-grow: 1;
       }
 
       .container {
