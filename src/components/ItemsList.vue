@@ -53,9 +53,10 @@ export default {
 
 <style lang="less" scoped>
   .items-list {
+    width: 100%;
     margin: 50px;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 
     @media @tablets {
       flex-wrap: wrap;
