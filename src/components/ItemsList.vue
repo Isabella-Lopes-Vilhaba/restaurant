@@ -23,7 +23,7 @@ export default {
     };
   },
   created() {
-    
+    this.getItensList();
   },
   computed: {
     selectedCategory() {
