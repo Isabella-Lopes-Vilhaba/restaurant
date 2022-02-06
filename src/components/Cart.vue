@@ -17,7 +17,6 @@
 import CartItem from './CartItem.vue';
 import { mapGetters } from 'vuex';
 import Mixin from '@/mixins/mixins';
-import feather from 'feather-icons';
 
 export default {
   name: 'Cart',
